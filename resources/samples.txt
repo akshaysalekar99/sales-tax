@@ -1,0 +1,23 @@
+Sample 1:
+
+Input:
+'[{"itemName": "book", "quantity": 1, "valueBeforeTax": 12.49}, {"itemName": "Music CD", "quantity": 1, "valueBeforeTax": 14.99}, {"itemName": "chocolates", "quantity": 1, "valueBeforeTax": 0.85}]'
+
+Output:
+{"items": [{"itemName": "book", "quantity": 1, "valueAfterTax": 12.49}, {"itemName": "Music CD", "quantity": 1, "valueAfterTax": 16.49}, {"itemName": "chocolates", "quantity": 1, "valueAfterTax": 0.85}], "totalCostWithTaxes": 29.83, "totalTax": 1.5}
+
+
+Sample 2:
+Input:
+'[{"itemName": "chocolates", "quantity": 1, "valueBeforeTax": 10.00, "isImported": true}, {"itemName": "perfume", "quantity": 1, "valueBeforeTax": 47.50, "isImported": true}]'
+
+Output:
+{"items": [{"itemName": "chocolates", "quantity": 1, "valueAfterTax": 10.5}, {"itemName": "perfume", "quantity": 1, "valueAfterTax": 54.65}], "totalCostWithTaxes": 65.15, "totalTax": 7.65}
+
+
+Sample 3:
+Input:
+'[{"itemName": "perfume", "quantity": 1, "valueBeforeTax": 27.99, "isImported": true}, {"itemName": "perfume", "quantity": 1, "valueBeforeTax": 18.99}, {"itemName": "headache pills", "quantity": 1, "valueBeforeTax": 9.75}, {"itemName": "chocolates", "quantity": 1, "valueBeforeTax": 11.25, "isImported": true}]'
+
+Output:
+{"items": [{"itemName": "perfume", "quantity": 1, "valueAfterTax": 32.19}, {"itemName": "perfume", "quantity": 1, "valueAfterTax": 20.89}, {"itemName": "headache pills", "quantity": 1, "valueAfterTax": 9.75}, {"itemName": "chocolates", "quantity": 1, "valueAfterTax": 11.85}], "totalCostWithTaxes": 74.68, "totalTax": 6.7}
